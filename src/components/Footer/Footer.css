@@ -1,0 +1,28 @@
+.footer-link{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    background-color: #333333;
+}
+.footer-link ul li{
+    list-style: none;
+    margin-top: 12px;
+}
+.footer-link ul li a{
+    text-decoration: none;
+    color: rgb(133, 131, 131);
+}
+.footer-link h4{
+    color: white;
+}
+.footer-link p{
+      color: rgb(133, 131, 131);
+      margin-top: 5px;
+}
+@media(max-width:768px){
+    .footer-link{
+        padding: 15px;
+        gap: 20px;
+    }
+}

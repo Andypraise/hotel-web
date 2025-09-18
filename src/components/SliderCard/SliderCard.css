@@ -1,0 +1,61 @@
+.slide-card{
+    background-color: white;
+    width: 350px;
+    height: 350px;
+    transition:  all .4s ease-in-out;
+    overflow: hidden;
+}
+.slide-card img{
+    width: 100%;
+    transition: transform .3s ease;
+    transform: scale(1);
+    cursor: pointer;
+    height: auto;
+}
+
+
+.card-desc{
+    white-space: pre-line;
+
+}
+.card-link {
+  display: inline-block;
+  margin-top: 10px;
+  color:red;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.card-link:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+@media(max-width:768px){
+    .slide-card{
+        width: 450px;
+        height: 450px;
+    }
+}
+@media(max-width:645px){
+    .slide-card{
+        width: 400px;
+        height: 400px;
+    }
+}
+@media(max-width:545px){
+    .slide-card{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media(max-width:400px){
+    .slide-card img{
+        width: 300px;
+    }
+    .slide-card{
+        width: 300px;
+    }
+}

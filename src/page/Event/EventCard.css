@@ -1,0 +1,33 @@
+.color-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.event-card {
+  width: 350px;
+  height: 350px;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  background-color: white;
+  gap: 5px;
+}
+.event-card img {
+  width: 100%;
+  transition: transform 0.3s ease;
+  transform: scale(1);
+  cursor: pointer;
+  height: auto;
+}
+.event-card h4 {
+  padding-top: 10px;
+}
+
+.card-desc{
+    padding-top: 5px;
+    font-size: 15px;
+}

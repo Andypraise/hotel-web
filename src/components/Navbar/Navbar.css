@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1000;
+  background: transparent; /* default */
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+  background: #fff; /* white when scrolled */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px;
+}
+
+.logo {
+  font-size: 27px;
+  color: white; /* default transparent mode */
+  transition: color 0.3s ease;
+  padding-left: 10px;
+}
+
+.navbar.scrolled .logo h1 {
+  color: #333; /* dark on white background */
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-right: 40px;
+}
+
+.nav-menu li {
+  list-style: none;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: rgb(201, 199, 199); /* default */
+  transition: color 0.3s ease;
+}
+
+.nav-menu li:first-child a {
+  color: white; /* active link */
+}
+
+.navbar.scrolled .nav-menu li a {
+  color: #333; /* dark links on white */
+}
+
+.nav-menu li a:hover {
+  color: #0077cc; /* hover effect */
+}
+
+.menu {
+  display: none;
+}
+/* Overlay menu (absolute fullscreen) */
+.overlay {
+  position: fixed;  /* <-- THIS makes it float above everything */
+  top: 0;
+  left: 0;
+  width: 60vw;
+  height: 100vh;
+  background: rgba(15, 15, 15, 0.95);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000; /* higher than navbar */
+   
+}
+/* Open state */
+.overlay.open {
+  animation: slideIn 0.5s forwards;
+}
+
+/* Closing state */
+.overlay.close {
+  animation: slideOut 0.5s forwards;
+}
+
+/* Keyframes */
+@keyframes slideIn {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.overlay ul li {
+  margin: 20px 0;
+}
+
+.overlay ul li a {
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.overlay ul li a:hover {
+  color: #f4a261;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 3rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* ✅ Mobile adjustments */
+@media (max-width: 768px) {
+  .nav-container {
+    justify-content: space-between;
+    padding: 9px;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .menu {
+    display: block;
+    cursor: pointer;
+  }
+  .menu img {
+    width: 35px;
+  }
+}

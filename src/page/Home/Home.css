@@ -1,0 +1,224 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.home-slider {
+  width: 100%;
+  height: 80vh; /* full screen height */
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-image: url(../../assets/image1.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.slide-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../../assets/image2.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  
+  
+}
+.slide-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../../assets/image3.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  
+}
+.home-slider h2 {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+.home-slider p {
+  text-transform: uppercase;
+  color: white;
+  padding-top: 20px;
+}
+.event-section {
+  position: relative;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.event-section h2{
+  font-size: 40px;
+    font-weight: 500;
+}
+.event-slider-wrapper {
+  position: relative;
+  width: 85%;
+  margin-top: 30px;
+  /* keeps arrows aligned nicely */
+}
+
+.custom-prev,
+.custom-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  z-index: 10;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+  background: gold;
+  color: white;
+  transform: translateY(-50%) scale(1.2);
+}
+
+.custom-prev {
+  left: -20px; /* keep inside the slider */
+}
+
+.custom-next {
+  right: -20px;
+}
+.client-section {
+  padding: 40px 0;
+  
+}
+
+.client-section h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+ .div-color {
+  width: 60px;
+  height: 4px;
+  background: gold;
+  border-radius: 2px;
+}
+
+.client {
+  display: flex;
+  gap: 20px; /* space between image and text */
+  padding-left: 60px;
+  align-items: flex-start;
+}
+
+.client img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.client h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.client p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  width: 30px;   /* default is usually 44-50px */
+  height: 30px;
+  font-size: 16px; /* size of arrow symbol */
+  color: black;   /* arrow color */
+  background: rgba(255, 255, 255, 0.7); /* optional background */
+  border-radius: 50%;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: gold;
+  color: white;
+  transform: scale(1.1);
+}
+
+
+/* Tablets and below */
+@media (max-width: 991px) {
+  /* you can adjust typography or spacing here if needed */
+}
+
+/* Slightly smaller tablets */
+@media (max-width: 850px) {
+  /* adjustments if you need tighter layout */
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  /* hide navigation arrows */
+  .swiper-button-next,
+  .swiper-button-prev,
+  .custom-next,
+  .custom-prev {
+    display: none !important;
+  }
+
+  /* center the client content inside slides */
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 645px) {
+  
+
+  .event-section {
+    width: 100%;
+    text-align: center;
+  }
+
+  .event-card img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 545px) {
+  .home-slider h2 {
+    font-size: 30px;
+  }
+
+  .client {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .home-slider h2 {
+    font-size: 26px;
+  }
+
+  .client {
+    margin-top: 20px;
+  }
+}

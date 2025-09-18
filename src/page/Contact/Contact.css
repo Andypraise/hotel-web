@@ -1,0 +1,139 @@
+.contact-section{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-direction: row;
+    margin-top: 80px;
+}
+.input{
+    margin-top: 30px;
+}
+
+.input input{
+    width: 550px;
+    height: 45px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border: 1px solid #CED4DA;
+    border-radius: 3px;
+}
+.input textarea{
+    width: 550px;
+    height: 87px;
+      border: 1px solid #CED4DA;
+    outline: none;
+    resize: none;
+      padding: 5px;
+      border-radius: 3px;
+      
+}
+.btn button{
+    width: 150px;
+    height: 45px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #F23A2E;
+    color: #fff;
+    margin-top: 10px;
+}
+.contact-info h2{
+    font-weight: 500;
+}
+.contact-item{
+    margin-top: 20px;
+    gap: 20px;
+}
+.contact-item h3{
+    font-size: 17px;
+    color: #7F7F7F;
+}
+.contact-item p{
+    margin-top: 10px;
+    color: red;
+}
+
+
+@media(max-width:991px){
+   .contact-section{
+    display: flex;
+    padding: 20px;
+    margin: 0;
+}
+.input input{
+    width: 330px;
+}
+.input textarea{
+    width: 330px; 
+} 
+}
+@media(max-width:850px){
+.contact-section{
+    display: flex;
+    padding: 20px;
+    margin: 0;
+}
+.input input{
+    width: 330px;
+}
+.input textarea{
+    width: 330px; 
+}
+}
+@media(max-width:768px){
+.contact-section{
+    display: flex;
+    padding: 20px;
+    margin: 0;
+}
+.input input{
+    width: 300px;
+}
+.input textarea{
+    width: 300px; 
+}
+}
+@media(max-width:645px){
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0;
+}
+.input input{
+    width: 400px;
+}
+.input textarea{
+    width: 400px; 
+}
+}
+@media(max-width:545px){
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0;
+}
+.input input{
+    width: 350px;
+}
+.input textarea{
+    width: 350px; 
+}
+}
+@media(max-width:400px){
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0;
+}
+.input input{
+    width: 330px;
+}
+.input textarea{
+    width: 330px; 
+}
+}
