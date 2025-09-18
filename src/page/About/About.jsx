@@ -3,14 +3,14 @@ import mainImage from "../../assets/image1.png"; // main video thumbnail
 import previewImage from "../../assets/image6.png"; // preview image
 import arrowImage from "../../assets/image7.png";
 import "./About.css";
-import swiImage from "../../assets/image12.png";
-import hoteImage from "../../assets/image19.png";
-import fireImage from "../../assets/image13.png";
-import carImage from "../../assets/image14.png";
-import hairImage from "../../assets/image15.png";
-import miniImage from "../../assets/image16.png";
-import drinkImage from "../../assets/image17.png";
-import portImage from "../../assets/image18.png";
+import swiImage from "../../assets/image23.png";
+import hoteImage from "../../assets/image24.png";
+import fireImage from "../../assets/image26.png";
+import carImage from "../../assets/image25.png";
+import hairImage from "../../assets/image27.png";
+import miniImage from "../../assets/image28.png";
+import drinkImage from "../../assets/image29.png";
+import portImage from "../../assets/image30.png";
 import PromoBanner from "../../components/PromoBanner/PromoBanner";
 import Gallery from "../../components/Gallery/Gallery";
 import SliderCard from "../../components/SliderCard/SliderCard";
