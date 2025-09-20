@@ -13,12 +13,12 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // hide preloader after page loads
+    // hide preloader when page loads OR after 10 seconds
     const handleLoad = () => setLoading(false);
     window.addEventListener("load", handleLoad);
 
-    // fallback: hide after 2.5s
-    const timer = setTimeout(() => setLoading(false), 2500);
+    // fallback timeout (10s)
+    const timer = setTimeout(() => setLoading(false), 10000);
 
     return () => {
       window.removeEventListener("load", handleLoad);
