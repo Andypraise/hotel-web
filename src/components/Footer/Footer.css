@@ -20,6 +20,9 @@
       color: rgb(133, 131, 131);
       margin-top: 5px;
 }
+.icon-img{
+    cursor: pointer;
+}
 @media(max-width:768px){
     .footer-link{
         padding: 15px;

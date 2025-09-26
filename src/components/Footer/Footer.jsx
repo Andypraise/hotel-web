@@ -1,5 +1,8 @@
 import React from 'react'
 import "./Footer.css"
+import faceImage from "../../assets/icons8-facebook-50.png"
+import twiImage from "../../assets/icons8-twitter-50.png"
+import instaImage from "../../assets/icons8-instagram-50.png"
 function Footer() {
   return (
     <div>
@@ -34,6 +37,11 @@ function Footer() {
             </div>
             <div>
                 <h4>Social Icons</h4>
+                <div className='icon-img'>
+                    <img src={faceImage} alt="" width="30px" />
+                    <img src={twiImage} alt="" width="30px" />
+                    <img src={instaImage} alt="" width="30px" />
+                </div>
             </div>
         </div>
     </div>

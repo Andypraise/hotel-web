@@ -227,7 +227,7 @@ function Home() {
             </SwiperSlide>
 
             <SwiperSlide>
-              <SliderCard
+              <SliderCard 
                 url={cardImage}
                 title="Second Blog Post"
                 text="Sep 25th, 2025 • By Admin"
